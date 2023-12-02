@@ -1,0 +1,31 @@
+<script>
+    let search = window.location.href.split("?q=")[1]
+    let endpoint = "https://www.bing.com/search?q="
+    
+    if (search=="about%3Ablank"){
+      window.location.href = "about:blank"
+    }
+      
+     else if (search=="name"){
+      let name = prompt("What's your name?") 
+      alert("Hello, "+name)
+     }
+      
+      else if (search=="hi"){
+        window.location.href = "https://collaborate-.glitch.me"
+      }
+      
+      else if (search=="imagine"){
+        alert("Imagienisthebest")
+      }
+      
+      else if (search=="spam"){
+        for(let i=1;i>0;i++){
+        window.open()
+        }
+      }
+      
+      else{
+    window.open(endpoint+search)
+      }
+    </script>
